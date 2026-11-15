@@ -1,1 +1,122 @@
-# escudo-digital
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escudo Digital - Apoyo y Blindaje Antiextorsión</title>
+    <!-- Tailwind CSS para un diseño limpio y moderno -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- Encabezado -->
+    <header class="bg-blue-900 text-white shadow-md">
+        <div class="max-w-md mx-auto px-4 py-4 flex items-center justify-between">
+            <h1 class="text-lg font-bold flex items-center gap-2">
+                🛡️ Escudo Digital
+            </h1>
+            <span class="text-xs bg-blue-800 px-2 py-1 rounded-full text-blue-200">Modo Emergencia</span>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="max-w-md mx-auto p-4 flex-1 w-full space-y-6">
+
+        <!-- Muro de Tranquilidad Legal -->
+        <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 shadow-sm">
+            <h2 class="text-blue-900 font-bold flex items-center gap-2 mb-2">
+                ⚠️ Respira: Conoce tus derechos
+            </h2>
+            <ul class="text-xs space-y-1.5 text-slate-700">
+                <li>• <strong>No hay cárcel</strong> por deudas civiles en México.</li>
+                <li>• <strong>No pueden embargarte</strong> sin la orden directa de un juez.</li>
+                <li>• <strong>Pagar no detiene el acoso:</strong> solo les confirma que pueden seguir extorsionando.</li>
+            </ul>
+        </div>
+
+        <!-- Acceso Directo de Emergencia -->
+        <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+            <h3 class="font-bold text-slate-900 mb-1">Atención Inmediata (24/7)</h3>
+            <p class="text-xs text-slate-600 mb-3">Consejo Ciudadano Nacional (Asesoría legal y psicológica gratuita).</p>
+            <div class="grid grid-cols-2 gap-2">
+                <a href="tel:5555335533" class="bg-blue-900 text-white text-center py-2.5 rounded-lg font-medium text-sm flex items-center justify-center gap-1.5 hover:bg-blue-800 transition">
+                    📞 Llamar
+                </a>
+                <a href="https://wa.me/525555335533?text=Hola,%20necesito%20asesoría%20por%20una%20extorsión%20de%20aplicación." target="_blank" class="bg-green-600 text-white text-center py-2.5 rounded-lg font-medium text-sm flex items-center justify-center gap-1.5 hover:bg-green-700 transition">
+                    💬 WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <!-- Checklist de Emergencia Interactivo -->
+        <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+            <h3 class="font-bold text-slate-900 mb-2">Protocolo Paso a Paso</h3>
+            <p class="text-xs text-slate-600 mb-3">Marca las acciones conforme las vayas completando:</p>
+            <div class="space-y-2 text-sm" id="checklist-container">
+                <label class="flex items-start gap-2.5 cursor-pointer p-1 hover:bg-slate-50 rounded">
+                    <input type="checkbox" class="mt-1 w-4 h-4 text-blue-900 rounded border-slate-300">
+                    <div>
+                        <span class="font-medium text-slate-800">1. Activar Modo Avión y retirar SIM</span>
+                        <p class="text-xs text-slate-500">Corta la extracción de datos y frena llamadas masivas.</p>
+                    </div>
+                </label>
+                <label class="flex items-start gap-2.5 cursor-pointer p-1 hover:bg-slate-50 rounded">
+                    <input type="checkbox" class="mt-1 w-4 h-4 text-blue-900 rounded border-slate-300">
+                    <div>
+                        <span class="font-medium text-slate-800">2. Revocar permisos y desinstalar la app</span>
+                        <p class="text-xs text-slate-500">Quita acceso a contactos y borra la aplicación fraudulenta.</p>
+                    </div>
+                </label>
+                <label class="flex items-start gap-2.5 cursor-pointer p-1 hover:bg-slate-50 rounded">
+                    <input type="checkbox" class="mt-1 w-4 h-4 text-blue-900 rounded border-slate-300">
+                    <div>
+                        <span class="font-medium text-slate-800">3. Blindar WhatsApp (Verificación en 2 pasos)</span>
+                        <p class="text-xs text-slate-500">Oculta foto de perfil y restringe grupos a tus contactos.</p>
+                    </div>
+                </label>
+                <label class="flex items-start gap-2.5 cursor-pointer p-1 hover:bg-slate-50 rounded">
+                    <input type="checkbox" class="mt-1 w-4 h-4 text-blue-900 rounded border-slate-300">
+                    <div>
+                        <span class="font-medium text-slate-800">4. Enviar mensaje preventivo a contactos</span>
+                        <p class="text-xs text-slate-500">Adelántate a los extorsionadores avisando a tu red cercana.</p>
+                    </div>
+                </label>
+                <label class="flex items-start gap-2.5 cursor-pointer p-1 hover:bg-slate-50 rounded">
+                    <input type="checkbox" class="mt-1 w-4 h-4 text-blue-900 rounded border-slate-300">
+                    <div>
+                        <span class="font-medium text-slate-800">5. Silenciar números desconocidos y reportar</span>
+                        <p class="text-xs text-slate-500">Bloquea y marca como spam cada nuevo número que escriba.</p>
+                    </div>
+                </label>
+            </div>
+        </div>
+
+        <!-- Herramienta de Aviso Preventivo -->
+        <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+            <h3 class="font-bold text-slate-900 mb-1">Plantilla de Mensaje para Contactos</h3>
+            <p class="text-xs text-slate-600 mb-3">Copia y envía este texto a tus familiares o amigos para anular las amenazas de difamación:</p>
+            <div class="bg-slate-50 border border-slate-200 rounded-lg p-3 text-xs text-slate-700 mb-3" id="plantilla-texto">
+                Hola. Les aviso que mi teléfono fue vulnerado por una aplicación de préstamos fraudulentos que extrajo mi lista de contactos. Si reciben mensajes extraños, supuestas deudas o solicitudes de dinero a mi nombre, por favor ignórenlos y bloqueen el número. Es una extorsión. ¡Gracias por su apoyo!
+            </div>
+            <button onclick="copiarPlantilla()" class="w-full bg-slate-800 text-white py-2 rounded-lg text-xs font-medium hover:bg-slate-700 transition">
+                📋 Copiar Mensaje al Portapapeles
+            </button>
+        </div>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="text-center py-4 text-xs text-slate-500">
+        Herramienta de código abierto diseñada para la defensa comunitaria.
+    </footer>
+
+    <script>
+        function copiarPlantilla() {
+            const texto = document.getElementById('plantilla-texto').innerText;
+            navigator.clipboard.writeText(texto).then(() => {
+                alert('¡Mensaje copiado con éxito! Ya puedes pegarlo en tu chat de WhatsApp.');
+            });
+        }
+    </script>
+</body>
+</html>
